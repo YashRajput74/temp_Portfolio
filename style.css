@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.container>div:nth-child(1){
+    display: flex;
+    justify-content: center;
+}
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.avatar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+}
+.profile-info {
+    margin-left: 30px;
+    color: #8e8e8e;
+}
+.profile-info h2 {
+    margin: 0;
+    font-size: 24px;
+    color: black;
+}
+.profile-info p:nth-child(2){
+    color: black;
+}
+.buttons {
+    margin-top: 10px;
+}
+.buttons button {
+    padding: 8px 16px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    background-color: #eee;
+    font-weight: bold;
+}
+.buttons .contact {
+    background-color: black;
+    color: white;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 15px;
+}
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}

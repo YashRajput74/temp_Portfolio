@@ -1,4 +1,4 @@
-import { profile } from "./data";
+import { profile, projectData } from "./data";
 
 function renderHeader(){
     const profileInfo=`<h2>@${profile.github}</h2>
@@ -21,11 +21,17 @@ function renderHeader(){
     document.querySelector(".container>div:nth-child(1)").innerHTML=header;
 }
 function renderGallery(){
+  let imgProject=``;
+  Object.entries(projectData).forEach((pair)=>{
+      let project=pair[1];
+      imgProject+=`
+        <div class='project'>
+          <img src="${project.imgLink}" alt="${project.name}">
+        </div>
+      `;
+    })
     const gallery=`
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
+      ${imgProject}
     `;
     document.querySelector(".gallery").innerHTML=gallery;
 }

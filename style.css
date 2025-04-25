@@ -3,7 +3,6 @@ body {
     font-family: Arial, sans-serif;
     background-color: #fafafa;
 }
-
 .container {
     max-width: 900px;
     margin: 0 auto;
@@ -36,6 +35,9 @@ body {
 }
 .profile-info p:nth-child(2){
     color: black;
+}
+.profile-info p:nth-child(4){
+    color: blue;
 }
 .buttons {
     margin-top: 10px;
